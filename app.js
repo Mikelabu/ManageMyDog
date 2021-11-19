@@ -1,4 +1,4 @@
-ar express = require('express'); //these are the packages we need to be using
+var express = require('express'); //these are the packages we need to be using
 const path = require('path'); //another package
 
 var app = express();
