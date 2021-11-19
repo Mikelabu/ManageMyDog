@@ -1,0 +1,22 @@
+{
+  "name": "managemydog",
+  "version": "1.0.0",
+  "description": "This website manages medical records for dogs.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikelabu/ManageMyDog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikelabu/ManageMyDog/issues"
+  },
+  "homepage": "https://github.com/Mikelabu/ManageMyDog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
