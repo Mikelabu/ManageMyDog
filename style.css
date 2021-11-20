@@ -1,22 +1,7 @@
 /* stylesheet for Manage My Dog */
-body {
-  background-color: rgb(190, 236, 224);
-}
-
-.headerLogo img {
-  float: none;
-  width: 99%;
-  height: 10rem;
-  position: relative;
-  top: 20%;
-  padding-top: 0.1rem;
-  padding-bottom: 1rem;
-  padding-left: 0rem;
-  padding-right: 0rem;
-  left: auto;
-}
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
 
 * {
   margin: 0;
@@ -27,6 +12,32 @@ body {
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: rgb(223, 238, 246);
+}
+
+.header {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.headerLogo {
+  height: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(247, 14, 14, 0.1),
+      rgba(241, 9, 20, 0.1)
+    ),
+    url("images/1320x200 MangeMyDog.jpg");
+
+  background-position: center center;
+  background-size: 99% 99%;
+  background-repeat: no-repeat;
 }
 
 li {
@@ -39,11 +50,13 @@ a {
 
 /*Navbar and burger menu*/
 .navbar {
+  font-family: "Amaranth", sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
   position: relative;
   margin: 0.625rem 0 0 0;
 }
@@ -77,22 +90,65 @@ a {
 }
 
 .nav-link {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #475569;
+  font-size: 2.5rem;
+  font-weight: 450;
+  color: black;
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: #212cda;
 }
 
-.nav-logo {
-  font-size: 2.1rem;
-  font-weight: 500;
-  color: #482ff7;
+.footer {
+  padding-top: 2rem;
+  font-family: "Amaranth", sans-serif;
+}
+
+.foot-menu {
+  height: 2rem;
+  display: grid;
+  padding-left: 25%;
+  padding-right: 25%;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+/* ------ Media Queries for Devices ------------ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  ...;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  ...;
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    padding-top: 0.25rem;
+    padding-bottom: 1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  .headerLogo {
+    height: 10rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        rgba(247, 14, 14, 0.1),
+        rgba(241, 9, 20, 0.1)
+      ),
+      url("images/400x52 manageMydog4.jpg");
+
+    background-position: center center;
+    background-size: 99% 99%;
+    background-repeat: no-repeat;
+  }
+
   .nav-menu,
   .foot-menu {
     position: fixed;
@@ -139,15 +195,17 @@ a {
   }
 }
 
-.footer {
-  padding-top: 2rem;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  ...;
 }
 
-.foot-menu {
-  height: 2rem;
-  display: grid;
-  padding-left: 25%;
-  padding-right: 25%;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  ..;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  ..;
 }
