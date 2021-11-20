@@ -151,7 +151,7 @@ a {
 
   .nav-menu,
   .foot-menu {
-    position: fixed;
+    position: inherit;
     left: -100%;
     top: 8.5rem;
     flex-direction: column;
