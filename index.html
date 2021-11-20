@@ -10,28 +10,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="./js/navBar.js"></script>
+    <script type="text/javascript" src="./js/mobileNavBar.js" defer></script>
+    <!-- for mobile navbar<script type="text/javascript" src="./js/mobileNavBar.js"></script>-->
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="headerLogo">
         <center><img src="images/1320x200 MangeMyDog.jpg" /></center>
       </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Add New Dog Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Select Dog Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">FAQ</a>
+          </li>
+          <!--This is to display the footer with nav in mobile view-->
+          <li class="nav-foot-item">
+            <a href="#" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-foot-item">
+            <a href="#" class="nav-link">Privacy Policy</a>
+          </li>
+          <li class="nav-foot-item">
+            <a href="#" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
-
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-      >&#9776; open</span
-    >
+    <main>
+      <br />
+      <br />
+      <center>
+        <h1>BLAH BLAH BLAH BLAH</h1>
+        <h1>BLAH BLAH BLAH BLAH</h1>
+        <h1>BLAH BLAH BLAH BLAH</h1>
+        <h1>BLAH BLAH BLAH BLAH</h1>
+      </center>
+      <br />
+      <br />
+      <center><img src="images/DallasRiver.jpg" /></center>
+    </main>
+    <footer class="footer">
+      <ul class="foot-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

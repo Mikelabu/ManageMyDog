@@ -2,58 +2,150 @@
 body {
   background-color: rgb(190, 236, 224);
 }
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
 
-.overlay-content {
+.headerLogo img {
+  float: none;
+  width: 99%;
+  height: 10rem;
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  top: 20%;
+  padding-top: 0.1rem;
+  padding-bottom: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  left: auto;
 }
 
-.overlay a {
-  padding: 8px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
   text-decoration: none;
-  font-size: 36px;
-  color: #818181;
+}
+
+/*Navbar and burger menu*/
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.25rem;
+  position: relative;
+  margin: 0.625rem 0 0 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
   display: block;
-  transition: 0.3s;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
 
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+.nav-item {
+  margin-left: 1rem;
+}
+.nav-foot-item {
+  display: none;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay {
-    overflow-y: auto;
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu,
+  .foot-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    transition: 0.4s;
   }
-  .overlay a {
-    font-size: 20px;
+
+  .nav-menu.active {
+    left: 0;
   }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+
+  .nav-item {
+    margin: 2.5rem 0;
   }
+  .nav-foot-item {
+    display: inline;
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.footer {
+  padding-top: 2rem;
+}
+
+.foot-menu {
+  height: 2rem;
+  display: grid;
+  padding-left: 25%;
+  padding-right: 25%;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
