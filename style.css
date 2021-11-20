@@ -152,6 +152,7 @@ a {
   .nav-menu,
   .foot-menu {
     position: inherit;
+    overflow-x: scroll;
     left: -100%;
     top: 8.5rem;
     flex-direction: column;
