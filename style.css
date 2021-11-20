@@ -54,9 +54,9 @@ a {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
+  width: 3rem;
+  height: 0.25rem;
+  margin: 0.5rem auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
@@ -97,7 +97,7 @@ a {
   .foot-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 8.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -121,6 +121,8 @@ a {
   }
 
   .hamburger {
+    padding-top: 0rem;
+    padding-left: 70%;
     display: block;
     cursor: pointer;
   }
