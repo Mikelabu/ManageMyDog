@@ -170,6 +170,45 @@ a {
   border: 10rem;
   background: none;
 }
+/*search for names */
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Main content */
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 2rem;
+  border-style: solid;
+  border-color: rgb(88, 231, 231);
+  border-width: 0.01rem;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
 
 .footer {
   padding-top: 2rem;
@@ -189,7 +228,10 @@ a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  ...;
+  /*two coloumn will stack ontop of each other*/
+  .row {
+    flex-direction: column;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -275,6 +317,11 @@ a {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /*two coloumn will stack ontop of each other*/
+  .row {
+    flex-direction: column;
   }
 }
 

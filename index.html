@@ -11,6 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="./js/mobileNavBar.js" defer></script>
+    <script
+      type="text/javascript"
+      src="./js/changeTableContent.js"
+      defer
+    ></script>
+    <script type="text/javascript" src="./js/searchNames.js" defer></script>
 
     <!-- for mobile navbar<script type="text/javascript" src="./js/mobileNavBar.js"></script>-->
   </head>
@@ -31,22 +37,33 @@
           <div class="dropdown">
             <button class="dropbtn">Select Dog Profile</button>
             <div class="dropdown-content">
-              <a href="#" class="nav-link">Dallas</a>
-              <a href="#" class="nav-link">Rover</a>
-              <a href="#" class="nav-link">Sasha</a>
-              <a href="#" class="nav-link">Peannutt</a>
-              <a href="#" class="nav-link">Dallas</a>
-              <a href="#" class="nav-link">Rover</a>
-              <a href="#" class="nav-link">Sasha</a>
-              <a href="#" class="nav-link">Peannutt</a>
-              <a href="#" class="nav-link">Dallas</a>
-              <a href="#" class="nav-link">Rover</a>
-              <a href="#" class="nav-link">Sasha</a>
-              <a href="#" class="nav-link">Peannutt</a>
-              <a href="#" class="nav-link">Dallas</a>
-              <a href="#" class="nav-link">Rover</a>
-              <a href="#" class="nav-link">Sasha</a>
-              <a href="#" class="nav-link">Peannutt Sasha Sasha Sasha</a>
+              <ul id="search-content">
+                <input
+                  type="text"
+                  id="myInput"
+                  onkeyup="searchNames()"
+                  placeholder="Search for names.."
+                  title="Type in a name"
+                />
+                <li><a href="#" class="nav-link">Dallas</a></li>
+                <li><a href="#" class="nav-link">Rover</a></li>
+                <li><a href="#" class="nav-link">Sasha1</a></li>
+                <li><a href="#" class="nav-link">Peannutt</a></li>
+                <li><a href="#" class="nav-link">Dallas</a></li>
+                <li><a href="#" class="nav-link">Rover</a></li>
+                <li><a href="#" class="nav-link">Sasha2</a></li>
+                <li><a href="#" class="nav-link">Peannutt</a></li>
+                <li><a href="#" class="nav-link">Dallas</a></li>
+                <li><a href="#" class="nav-link">Rover</a></li>
+                <li><a href="#" class="nav-link">Sasha3</a></li>
+                <li><a href="#" class="nav-link">Peannutt</a></li>
+                <li><a href="#" class="nav-link">Dallas</a></li>
+                <li><a href="#" class="nav-link">Rover</a></li>
+                <li><a href="#" class="nav-link">Sasha4</a></li>
+                <li>
+                  <a href="#" class="nav-link">Peannutt Sasha Sasha Sasha</a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -72,19 +89,52 @@
       </nav>
     </header>
     <main>
-      <br />
-      <br />
-      <center>
-        <h1>BLAH BLAH BLAH BLAH</h1>
-        <h1>BLAH BLAH BLAH BLAH</h1>
-        <h1>BLAH BLAH BLAH BLAH</h1>
-        <h1>BLAH BLAH BLAH BLAH</h1>
-      </center>
-      <br />
-      <br />
-      <center>
-        <img src="images/thankyoumobile390x550.jpg" width="20%" />
-      </center>
+      <div class="row">
+        <div class="side">
+          <center><h2>Favourite Dog Summary</h2></center>
+          <p>Summary of pet details in list form</p>
+        </div>
+        <div class="main">
+          <h2>Pet Photo1</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>Some text..</p>
+          <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+          <br />
+          <h2>Pet Photo2</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>Some text..</p>
+        </div>
+      </div>
+
+      <!-- table for my summary section -->
+      <table id="myTable" border="4">
+        <tr>
+          <td>Name: Row1 cell1</td>
+          <td>Dallas cell2</td>
+        </tr>
+        <tr>
+          <td>Row2 cell1</td>
+          <td>Row2 cell2</td>
+        </tr>
+        <tr>
+          <td>Row3 cell1</td>
+          <td>Row3 cell2</td>
+        </tr>
+      </table>
+      <p>
+        <input
+          type="button"
+          onclick="changeContent('myTable', 2, 1, 'Hello')"
+          value="Change content"
+        />
+      </p>
     </main>
     <footer class="footer">
       <ul class="foot-menu">
