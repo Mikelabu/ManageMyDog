@@ -4,7 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
 
 * {
-  margin: 0;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.15rem;
+  margin-bottom: 2rem;
   padding: 0;
   box-sizing: border-box;
 }
@@ -36,7 +39,7 @@ body {
     url("images/1320x200 MangeMyDog.jpg");
 
   background-position: center center;
-  background-size: 99% 99%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -99,6 +102,75 @@ a {
   color: #212cda;
 }
 
+/*Drop down menu for selectin a exisitng dog*/
+.dropdown {
+  margin: 0 1rem;
+  position: relative;
+  display: inline-block;
+  font-family: "Amaranth", sans-serif;
+  text-transform: none;
+  font-size: 2.5rem;
+  /* color: #4a4a4a; */
+  /*We want these buttons to have a decent touch area so they are easy to click/tap*/
+  /* display: inline-block;
+  min-height: 2.8125rem;
+  align-items: center; */
+  /*Styles needed for the button only*/
+  /* border: 2rem;
+  background: none;
+  transition: 0.5s; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 6rem;
+  border-radius: 1rem;
+  background-color: rgb(174, 220, 245);
+  color: black;
+}
+
+.dropdown-content a {
+  color: black;
+  min-width: 4rem;
+  padding: 1.25rem 4rem;
+  transition: 0.2s;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(244, 213, 236);
+  color: rgb(225, 10, 25);
+  min-width: 16rem;
+  border-radius: 2.5rem;
+  transition: 0.1s;
+}
+
+.dropdown:hover .dropdown-content {
+  /* margin: 1rem 1rem; */
+  padding: 0.25rem 5rem;
+  display: block;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  text-align: center;
+}
+.dropbtn {
+  padding: 0 0;
+  margin: 0 0.625rem;
+  font-family: "Amaranth", sans-serif;
+  text-transform: none;
+  font-size: 2.5rem;
+  color: black;
+  /*We want these buttons to have a decent touch area so they are easy to click/tap*/
+  display: inline-flex;
+  min-height: 2.8125rem;
+  align-items: center;
+  /*Styles needed for the button only*/
+  border: 10rem;
+  background: none;
+}
+
 .footer {
   padding-top: 2rem;
   font-family: "Amaranth", sans-serif;
@@ -125,7 +197,17 @@ a {
   ...;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
+  body {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    content: inherit;
+  }
+  img {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-size: inherit;
+  }
   .header {
     padding-top: 0.25rem;
     padding-bottom: 1rem;
