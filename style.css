@@ -349,9 +349,9 @@ img {
 
   .column,
   img {
-    height: 45rem;
+    height: 40rem;
     float: left;
-    width: 80%;
+    width: 90%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
