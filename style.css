@@ -200,7 +200,7 @@ a {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 25%;
-  background-color: #f1f1f1;
+  background-color: #f5e2e2;
   padding: 2rem;
   border-style: solid;
   border-color: rgb(88, 231, 231);
@@ -211,7 +211,7 @@ a {
 .main {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: white;
+  background-color: clear;
   padding: 2rem;
 }
 
