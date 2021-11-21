@@ -42,7 +42,7 @@
                   type="text"
                   id="myInput"
                   onkeyup="searchNames()"
-                  placeholder="Search for names.."
+                  placeholder="Search for Dog names.."
                   title="Type in a name"
                 />
                 <li><a href="#" class="nav-link">Dallas</a></li>
@@ -56,13 +56,6 @@
                 <li><a href="#" class="nav-link">Dallas</a></li>
                 <li><a href="#" class="nav-link">Rover</a></li>
                 <li><a href="#" class="nav-link">Sasha3</a></li>
-                <li><a href="#" class="nav-link">Peannutt</a></li>
-                <li><a href="#" class="nav-link">Dallas</a></li>
-                <li><a href="#" class="nav-link">Rover</a></li>
-                <li><a href="#" class="nav-link">Sasha4</a></li>
-                <li>
-                  <a href="#" class="nav-link">Peannutt Sasha Sasha Sasha</a>
-                </li>
               </ul>
             </div>
           </div>
@@ -92,40 +85,115 @@
       <div class="row">
         <div class="side">
           <center><h2>Favourite Dog Summary</h2></center>
-          <p>Summary of pet details in list form</p>
+          <ul>
+            <li>Name: Dallas</li>
+            <li>Breed: German Shepard</li>
+            <li>Weight: 42kg</li>
+            <li>Registration Details: Chip 5987136</li>
+            <li>Registration Details: Renew 01/2022</li>
+            <li>Next Vacination Due: 16/12/21</li>
+            <li>Deworm Due: 01/12/2021</li>
+            <li>De Flea Due: 25/12/2021</li>
+            <li>Latest Vet Checkup Date: 01/11/21</li>
+          </ul>
+          <center><h2>Medical</h2></center>
+          <ul>
+            <li>Medication:1 tab antibiotics 2 x daily with food</li>
+          </ul>
+          <center><h2>Observations Required</h2></center>
+          <ul>
+            <li>Check poop Daily</li>
+            <li>Water and Food intake as per usual ?</li>
+            <li>Any signs of discomfort</li>
+          </ul>
         </div>
         <div class="main">
-          <h2>Pet Photo1</h2>
+          <div class="column">
+            <img
+              src="images/Puppies desktop.jpg"
+              alt="Newly Born Puppies"
+              style="width: 100%"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/DallasRiver.jpg"
+              alt="German Shepard Resting"
+              style="width: 100%"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/DallasChester.jpg"
+              alt="German Shepard and Labrador making friends"
+              style="width: 100%"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/DallashesterDTC.jpg"
+              alt="German Shepard and Labrador sitting"
+              style="width: 100%"
+            />
+          </div>
+
+          <!-- <h2>Pet Photo1</h2>
           <h5>Title description, Dec 7, 2017</h5>
           <div class="fakeimg" style="height: 200px">Image</div>
           <p>Some text..</p>
           <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
+           
           <br />
           <h2>Pet Photo2</h2>
           <h5>Title description, Sep 2, 2017</h5>
           <div class="fakeimg" style="height: 200px">Image</div>
-          <p>Some text..</p>
+          <p>Some text..</p> -->
         </div>
       </div>
 
       <!-- table for my summary section -->
-      <table id="myTable" border="4">
+      <table class="myTable" border="4">
         <tr>
-          <td>Name: Row1 cell1</td>
-          <td>Dallas cell2</td>
+          <!-- row1 cell1
+          row2 cell2 -->
+          <td>Name:</td>
+          <td>Dallas</td>
         </tr>
         <tr>
-          <td>Row2 cell1</td>
-          <td>Row2 cell2</td>
+          <td>Breed:</td>
+          <td>German Shepard</td>
         </tr>
         <tr>
-          <td>Row3 cell1</td>
-          <td>Row3 cell2</td>
+          <td>Registration details</td>
+          <td>Chip 5987136,Renew 01/2022</td>
+        </tr>
+        <tr>
+          <td>Vacination Due:</td>
+          <td>16/12/2021</td>
+        </tr>
+        <tr>
+          <td>DeWorm Due:</td>
+          <td>01/12/2021</td>
+        </tr>
+        <tr>
+          <td>DeFlea Due:</td>
+          <td>25/12/2021</td>
+        </tr>
+        <tr>
+          <td>Latest Vet Checkup:</td>
+          <td>01/11/2021</td>
+        </tr>
+      </table>
+      <table class="myTable" border="4">
+        <tr>
+          <td>Medication</td>
+          <td>1 tab Antibiotic 2x daily</td>
+        </tr>
+        <tr>
+          <td>To Observe</td>
+          <td>
+            Check poop daily, Water and Food Intake , any signs of discomfort
+          </td>
         </tr>
       </table>
       <p>

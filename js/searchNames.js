@@ -1,4 +1,4 @@
-// To search for dog on the list
+// To search for Dog name
 
 function searchNames() {
     var input, filter, ul, li, a, i, txtValue;
@@ -17,4 +17,3 @@ function searchNames() {
     }
 }
 
-module.exports = searchNames

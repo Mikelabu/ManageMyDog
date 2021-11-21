@@ -110,6 +110,10 @@ a {
   font-family: "Amaranth", sans-serif;
   text-transform: none;
   font-size: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   /* color: #4a4a4a; */
   /*We want these buttons to have a decent touch area so they are easy to click/tap*/
   /* display: inline-block;
@@ -134,7 +138,6 @@ a {
   color: black;
   min-width: 4rem;
   padding: 1.25rem 4rem;
-  transition: 0.2s;
   text-decoration: none;
   display: block;
 }
@@ -144,7 +147,6 @@ a {
   color: rgb(225, 10, 25);
   min-width: 16rem;
   border-radius: 2.5rem;
-  transition: 0.1s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -172,13 +174,14 @@ a {
 }
 /*search for names */
 #myInput {
-  background-position: 10px 12px;
+  background-position: 6rem 4rem;
   background-repeat: no-repeat;
   width: 100%;
-  font-size: 1.25rem;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  padding-left: 0.25rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.25rem;
+  border: 0.25rem solid rgb(155, 155, 155);
 }
 
 /* Main content */
@@ -188,6 +191,8 @@ a {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.5rem;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -207,8 +212,26 @@ a {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 20px;
+  padding: 2rem;
 }
+
+/*images on homepage*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column,
+img {
+  height: 45rem;
+  float: left;
+  width: 49%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Clear floats after image containers */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
 
 .footer {
   padding-top: 2rem;
@@ -322,6 +345,15 @@ a {
   /*two coloumn will stack ontop of each other*/
   .row {
     flex-direction: column;
+  }
+
+  .column,
+  img {
+    height: 45rem;
+    float: left;
+    width: 80%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
