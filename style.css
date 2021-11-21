@@ -151,10 +151,11 @@ a {
 
   .nav-menu,
   .foot-menu {
-    position: inherit;
+    position: fixed;
+    height: 80%;
     overflow-x: scroll;
     left: -100%;
-    top: 8.5rem;
+    top: 10rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
