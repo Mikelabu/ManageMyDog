@@ -152,10 +152,9 @@ a {
   .nav-menu,
   .foot-menu {
     position: fixed;
-    height: 80%;
-    overflow-x: scroll;
+    overflow-x: auto;
     left: -100%;
-    top: 10rem;
+    top: 8.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
