@@ -350,7 +350,7 @@ img {
   .column,
   img {
     height: 40rem;
-    float: left;
+    float: none;
     width: 90%;
     padding-left: 1rem;
     padding-right: 1rem;
