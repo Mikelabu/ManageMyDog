@@ -199,7 +199,7 @@ a {
 /* Sidebar/left column */
 .side {
   -ms-flex: 30%; /* IE10 */
-  flex: 20%;
+  flex: 25%;
   background-color: #f1f1f1;
   padding: 2rem;
   border-style: solid;
