@@ -104,16 +104,18 @@ a {
 
 /*Drop down menu for selectin a exisitng dog*/
 .dropdown {
-  margin: 0 1rem;
+  margin-left: 1rem;
   position: relative;
   display: inline-block;
   font-family: "Amaranth", sans-serif;
   text-transform: none;
   font-size: 2.5rem;
+  font-weight: 450;
+  color: black;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   /* color: #4a4a4a; */
   /*We want these buttons to have a decent touch area so they are easy to click/tap*/
   /* display: inline-block;
@@ -132,6 +134,8 @@ a {
   border-radius: 1rem;
   background-color: rgb(174, 220, 245);
   color: black;
+  max-height: 60rem;
+  overflow: scroll;
 }
 
 .dropdown-content a {
@@ -143,10 +147,10 @@ a {
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(244, 213, 236);
+  background-color: #f5e2e2;
   color: rgb(225, 10, 25);
   min-width: 16rem;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
 }
 
 .dropdown:hover .dropdown-content {
