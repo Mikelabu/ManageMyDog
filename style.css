@@ -245,6 +245,50 @@ img {
   padding-right: 1rem;
 }
 
+/*Add ned Dog Profile page*/
+.newDogRow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  font-family: "Amaranth", sans-serif;
+  font-size: 3rem;
+  padding-top: 0.25rem;
+  padding-bottom: 1rem;
+}
+
+.newDogSide {
+  -ms-flex: 30%; /* IE10 */
+  flex: 40%;
+  background-color: #f5e2e2;
+  padding: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.01rem;
+}
+
+.sideImg {
+  -ms-flex: 70%; /* IE10 */
+  flex: 10%;
+  background-color: clear;
+  padding-top: 1rem;
+  padding-left: 5rem;
+}
+
+.dropImg,
+img {
+  height: 35rem;
+  float: left;
+  width: 60%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dogDetails {
+  border: solid;
+  border-color: black;
+  background-color: white;
+}
 /* Clear floats after image containers */
 /* .row::after {
   content: "";
