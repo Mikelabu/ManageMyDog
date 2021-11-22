@@ -1,1 +1,0 @@
-// the summary section will zoom in when the mouse selects area

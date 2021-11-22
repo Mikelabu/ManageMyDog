@@ -19,12 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="homePage" href="../index.html" />
-    <link rel="selectDogProfile" href="selectDogProfile.html" />
+    <link rel="addNewDogProfile" href="/html/addNewDogProfile.html" />
     <link rel="faq" href="/html/faq.html" />
     <link rel="aboutUs" href="/html/aboutUs.html" />
     <link rel="privacyPolicy" href="/html/privacyPolicy.html" />
-    <link rel="contactUs" href="/html/contactUs.html" />
-
     <script type="text/javascript" src="../js/mobileNavBar.js" defer></script>
     <script
       type="text/javascript"
@@ -32,13 +30,16 @@
       defer
     ></script>
     <script type="text/javascript" src="../js/searchNames.js" defer></script>
+    <script type="text/javascript" src="../js/contactUsForm.js" defer></script>
 
     <!-- for mobile navbar<script type="text/javascript" src="./js/mobileNavBar.js"></script>-->
   </head>
   <body>
     <header class="header">
       <div class="headerLogo">
-        <center><h1 class="pageDescription">Add New Dog Profile</h1></center>
+        <center>
+          <h1 class="pageDescription">Contact Us</h1>
+        </center>
         <!-- <center><img src="images/1320x200 MangeMyDog.jpg" /></center> -->
       </div>
       <nav class="navbar">
@@ -47,7 +48,9 @@
             <a href="../index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Add New Dog Profile</a>
+            <a href="/html/addNewDogProfile.html" class="nav-link"
+              >Add New Dog Profile</a
+            >
           </li>
 
           <div class="dropdown">
@@ -98,7 +101,7 @@
             </div>
           </div>
           <li class="nav-item">
-            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="/html/faq.html" class="nav-link">FAQ</a>
           </li>
           <!--This is to display the footer with nav in mobile view-->
           <li class="nav-foot-item">
@@ -110,7 +113,7 @@
             >
           </li>
           <li class="nav-foot-item">
-            <a href="/html/contactUs.html" class="nav-link">Contact Us</a>
+            <a href="#" class="nav-link">Contact Us</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -121,91 +124,33 @@
       </nav>
     </header>
     <main>
-      <div class="newDogRow">
-        <div class="newDogSide">
-          <center><h1>Please Complete all Details Below</h1></center>
-          <ul class="dogDetails">
-            <li>Dog Name: Dallas</li>
-            <li>Unique ID: DallasLab08</li>
-            <li>Breed: German Shepard</li>
-            <li>Birth Date: December 2008</li>
-            <li>Mother: Sasha Lab</li>
-            <li>Father: The Beast</li>
-            <li>Bloodline: The Beast, The Queen and the King</li>
-          </ul>
-          <center><h1>Medical Information Regarding Bloodline</h1></center>
-          <ul class="dogDetails">
-            <li>
-              Mother:
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-                qui accusantium odio alias inventore error quidem maiores hic
-                nam temporibus laborum odit ipsa fugit ex, soluta nisi omnis
-                illum? Aut.
-              </p>
-            </li>
-            <li>
-              Father:
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-                qui accusantium odio alias inventore error quidem maiores hic
-                nam temporibus laborum odit ipsa fugit ex, soluta nisi omnis
-                illum? Aut.
-              </p>
-            </li>
-          </ul>
-          <center><h1>Behavioral Information Regarding Bloodline</h1></center>
-          <ul class="dogDetails">
-            <li>
-              Mother:
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-                qui accusantium odio alias inventore error quidem maiores hic
-                nam temporibus laborum odit ipsa fugit ex, soluta nisi omnis
-                illum? Aut.
-              </p>
-            </li>
-            <li>
-              Father:
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-                qui accusantium odio alias inventore error quidem maiores hic
-                nam temporibus laborum odit ipsa fugit ex, soluta nisi omnis
-                illum? Aut.
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="sideImg">
-          <h4>Drag and Drop Images Below</h4>
-          <div class="dropImg">
-            <img
-              src="../images/Puppies desktop.jpg"
-              alt="Newly Born Puppies"
-              style="width: 100%"
-            />
-          </div>
-          <div class="dropImg">
-            <img
-              src="../images/DallasRiver.jpg"
-              alt="German Shepard Resting"
-              style="width: 100%"
-            />
-          </div>
-          <div class="dropImg">
-            <img
-              src="../images/DallasChester.jpg"
-              alt="German Shepard and Labrador making friends"
-              style="width: 100%"
-            />
-          </div>
-          <div class="dropImg">
-            <img
-              src="../images/DallashesterDTC.jpg"
-              alt="German Shepard and Labrador sitting"
-              style="width: 100%"
-            />
+      <div class="row">
+        <div class="main">
+          <div class="wrapper">
+            <center>
+              <h1>Complete All Fields Below Before Submitting</h1>
+            </center>
+            <div id="error_message"></div>
+            <form action="" id="myform" onsubmit="return validate();">
+              <div class="input_field">
+                <input type="text" placeholder="Name" id="name" />
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Subject" id="subject" />
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Phone" id="phone" />
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Email" id="email" />
+              </div>
+              <div class="input_field">
+                <textarea placeholder="Message" id="message"></textarea>
+              </div>
+              <div class="btn">
+                <input type="submit" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -219,7 +164,7 @@
           <a href="/html/privacyPolicy.html" class="nav-link">Privacy Policy</a>
         </li>
         <li class="nav-item">
-          <a href="/html/contactUs.html" class="nav-link">Contact Us</a>
+          <a href="#" class="nav-link">Contact Us</a>
         </li>
       </ul>
     </footer>

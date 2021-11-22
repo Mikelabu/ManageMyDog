@@ -38,9 +38,9 @@ h4 {
 
   font-family: "Arvo", serif;
   color: #212cda;
-  font-size: 3rem;
-  font-weight: 600;
-  -webkit-text-stroke: 0.12rem white; /* width and color */
+  font-size: 3.5rem;
+  font-weight: 400;
+  -webkit-text-stroke: 0.09rem rgb(235, 226, 226); /* width and color */
 }
 
 .header {
@@ -289,6 +289,42 @@ img {
   border-color: black;
   background-color: white;
 }
+
+/*To display selected dog info page*/
+.profileInfo {
+  border: solid;
+  border-color: black;
+  background-color: white;
+  max-height: 40rem;
+  overflow: scroll;
+}
+
+.faqInfo {
+  border: solid;
+  border-color: black;
+  background-color: white;
+  font-size: 2.1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0rem;
+  max-height: 50rem;
+  overflow: scroll;
+}
+.aboutInfo {
+  border: solid;
+  border-color: black;
+  background-color: white;
+  font-size: 2.1rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-height: 60rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  overflow: scroll;
+}
+
 /* Clear floats after image containers */
 /* .row::after {
   content: "";
@@ -308,6 +344,88 @@ img {
   padding-right: 25%;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+}
+
+/*Contact us form*/
+/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans"); */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+} */
+
+/* body {
+  background: #fece0c;
+} */
+
+.wrapper {
+  border: solid;
+  border-color: #c5c9f7;
+  background-color: #f5e2e2;
+  color: back;
+  font-size: 2.1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding-top: 1rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 0rem;
+  max-height: 65rem;
+  overflow: scroll;
+}
+
+/* .wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+} */
+
+.wrapper .input_field {
+  margin-bottom: 1rem;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: 0.25rem solid #c5c9f7;
+  width: 100%;
+  padding: 10px;
+}
+/*message box*/
+.wrapper textarea {
+  resize: none;
+  height: 10rem;
+}
+
+.wrapper .btn input[type="submit"] {
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.4rem;
+  border: 0rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  background: #bdbfdb;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+#error_message {
+  margin-bottom: 1rem;
+  background: #fe8b8e;
+  padding-top: 0rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 1.25rem;
+  transition: all 0.5s ease;
 }
 
 /* ------ Media Queries for Devices ------------ */
