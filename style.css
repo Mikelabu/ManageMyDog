@@ -51,7 +51,7 @@ h4 {
 }
 
 .headerLogo {
-  height: 20rem;
+  height: 19rem;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
@@ -361,17 +361,24 @@ img {
   background: #fece0c;
 } */
 
+.contactMain {
+  -ms-flex: 70%; /* IE10 */
+  flex: 40%;
+  background-color: clear;
+  padding: 2rem;
+}
+
 .wrapper {
   border: solid;
   border-color: #c5c9f7;
   background-color: #f5e2e2;
-  color: back;
+  color: black;
   font-size: 2.1rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  padding-top: 1rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 0rem;
   max-height: 65rem;
   overflow: scroll;
@@ -463,7 +470,7 @@ img {
 
   .headerLogo {
     height: 10rem;
-    padding-top: 5rem;
+    padding-top: 0rem;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(
@@ -475,6 +482,15 @@ img {
     background-position: center center;
     background-size: 99% 99%;
     background-repeat: no-repeat;
+  }
+  .pageDescription {
+    padding-top: 0rem;
+
+    font-family: "Arvo", serif;
+    color: #212cda;
+    font-size: 3rem;
+    font-weight: 600;
+    -webkit-text-stroke: 0.09rem rgb(235, 226, 226); /* width and color */
   }
 
   .nav-menu,
@@ -536,16 +552,44 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .wrapper {
+    border: solid;
+    border-color: #c5c9f7;
+    background-color: #f5e2e2;
+    color: black;
+    font-size: 1.8rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    max-height: 65rem;
+    overflow: scroll;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  ...;
+  .wrapper {
+    border: solid;
+    border-color: #c5c9f7;
+    background-color: #f5e2e2;
+    color: black;
+    font-size: 2.1rem;
+    margin-left: 4rem;
+    margin-right: 4em;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    max-height: 65rem;
+    overflow: scroll;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  ..;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
