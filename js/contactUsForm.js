@@ -36,6 +36,6 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
-    alert("Form Submitted. Thank You for getting in touch.");
+    alert("Form Submitted Succesfully. Thank You " + name + " for getting in touch.");
     return true;
   }
