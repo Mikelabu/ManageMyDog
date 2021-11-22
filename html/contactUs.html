@@ -31,6 +31,11 @@
     ></script>
     <script type="text/javascript" src="../js/searchNames.js" defer></script>
     <script type="text/javascript" src="../js/contactUsForm.js" defer></script>
+    <script
+      type="text/javascript"
+      src="../js/dateTimeDisplay.js"
+      defer
+    ></script>
 
     <!-- for mobile navbar<script type="text/javascript" src="./js/mobileNavBar.js"></script>-->
   </head>
@@ -129,6 +134,8 @@
           <div class="wrapper">
             <center>
               <h1>Complete All Fields Below Before Submitting</h1>
+              <button id="timebtn">Click Me for Today's Date</button>
+              <center><p id="dateTime"></p></center>
             </center>
             <div id="error_message"></div>
             <form action="" id="myform" onsubmit="return validate();">

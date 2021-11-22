@@ -365,6 +365,8 @@ img {
   -ms-flex: 70%; /* IE10 */
   flex: 40%;
   background-color: clear;
+  margin-left: 20rem;
+  margin-right: 20rem;
   padding: 2rem;
 }
 
@@ -374,13 +376,14 @@ img {
   background-color: #f5e2e2;
   color: black;
   font-size: 2.1rem;
+  margin-top: 0.25rem;
   margin-left: 20rem;
   margin-right: 20rem;
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0rem;
-  max-height: 65rem;
+  max-height: 80rem;
   overflow: scroll;
 }
 
@@ -434,7 +437,34 @@ img {
   border-radius: 1.25rem;
   transition: all 0.5s ease;
 }
+/* Time and date button on Contact Us times page */
 
+#timebtn {
+  color: black;
+  font-size: 1.8rem;
+  background-color: rgb(161, 189, 212);
+  opacity: 0.9;
+  /* position: fixed; */
+  padding: 0.25rem 0.25rem;
+  /* margin: 1rem 1rem; */
+  /* border: none;
+  box-sizing: border-box;
+  border-style: inset;
+  border-width: thin; */
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 35rem;
+  opacity: 0.8;
+}
+#timebtn:hover {
+  background-color: rgb(80, 35, 244);
+  color: rgb(187, 240, 241);
+}
+#dateTime {
+  color: #2107c7;
+  /* font-family: "Oswald", sans-serif; */
+  font-size: 2.25rem;
+}
 /* ------ Media Queries for Devices ------------ */
 
 /* Extra small devices (phones, 600px and down) */
