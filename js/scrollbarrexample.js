@@ -1,6 +1,6 @@
-//scroll bar will be used on dog wellbeing section to enable reading of medical, wellbeing andd training records. 
+"use strict";
+//scroll bar will be used to enable reading of articles
 
-// When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
 function myFunction() {

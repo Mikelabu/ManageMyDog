@@ -1,5 +1,5 @@
-// To search for Dog name
-
+"use strict";
+// Search for Dog Names under SELECT DOG PROFILE
 function searchNames() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");

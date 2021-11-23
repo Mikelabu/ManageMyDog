@@ -1,4 +1,4 @@
-
+"use strict";
 // Geolocation for Contact Us form
 function geoFindMe() {
 

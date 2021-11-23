@@ -1,4 +1,5 @@
 "use strict";
+// Validate CONTACT US form
 
 function ValidateEmail() {
 
