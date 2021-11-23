@@ -608,8 +608,8 @@ img {
   .footer {
     padding-top: 1rem;
     font-family: "Amaranth", sans-serif;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     margin-bottom: 1rem;
   }
 
