@@ -486,9 +486,9 @@ img {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /* two coloumn will stack ontop of each other  */
-  .row {
+  /* .row {
     flex-direction: column;
-  }
+  } */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -616,13 +616,12 @@ img {
   .foot-menu {
     height: 0.25rem;
     display: grid;
-    width: 80%;
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
   }
 }
 
@@ -631,6 +630,9 @@ img {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     content: inherit;
+  }
+  .row {
+    flex-direction: column;
   }
   img {
     padding-left: 2rem;
