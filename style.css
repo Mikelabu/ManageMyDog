@@ -554,6 +554,7 @@ img {
     height: 30rem;
     float: left;
     width: 95%;
+    padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
