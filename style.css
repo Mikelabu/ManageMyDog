@@ -615,6 +615,23 @@ img {
     max-height: 65rem;
     overflow: scroll;
   }
+  .newDogSide {
+    -ms-flex: 30%; /* IE10 */
+    flex: 100%;
+    background-color: #f5e2e2;
+    padding: 2rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.01rem;
+  }
+  .dropImg,
+  img {
+    height: 40rem;
+    float: left;
+    width: 80%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
