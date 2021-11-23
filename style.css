@@ -616,6 +616,7 @@ img {
   .foot-menu {
     height: 0.25rem;
     display: grid;
+    width: 80%;
     margin-left: 0.15rem;
     margin-right: 0.15rem;
     padding-left: 0rem;
