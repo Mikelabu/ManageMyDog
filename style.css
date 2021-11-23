@@ -324,6 +324,18 @@ img {
   margin-right: 1rem;
   overflow: scroll;
 }
+.thankImg,
+img {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.thankMain {
+  -ms-flex: 70%; /* IE10 */
+  flex: 80%;
+  background-color: clear;
+  padding: 2rem;
+  width: 100%;
+}
 
 /* Clear floats after image containers */
 /* .row::after {

@@ -38,6 +38,11 @@ function validate(){
       return false;
     }
     
-    alert("Form Submitted Succesfully. Thank You " + name + " for getting in touch.");
+    alert("Form Submitted" + myFunction());
+
+    function myFunction() {
+      window.location.href = "../html/thankYou.html";
+    }
+    
     return true;
   }
