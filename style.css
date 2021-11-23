@@ -502,7 +502,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 600px) {
   body {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
