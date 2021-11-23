@@ -616,7 +616,8 @@ img {
   .foot-menu {
     height: 0.25rem;
     display: grid;
-
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
     padding-left: 0rem;
     padding-right: 0rem;
     grid-template-columns: repeat(3, 1fr);
