@@ -176,7 +176,7 @@ a {
 }
 .dropbtn {
   padding: 0 0;
-  margin: 0 0.625rem;
+  margin: 0rem 0rem;
   font-family: "Amaranth", sans-serif;
   text-transform: none;
   font-size: 2.5rem;
@@ -186,7 +186,7 @@ a {
   min-height: 2.8125rem;
   align-items: center;
   /*Styles needed for the button only*/
-  border: 10rem;
+  border: 0rem;
   background: none;
 }
 /*search for names */
@@ -491,7 +491,38 @@ img {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 600px) {
+  .nav-item {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 40%;
+    background-color: #f5e2e2;
+    padding: 2rem;
+    border-style: solid;
+    border-color: rgb(88, 231, 231);
+    border-width: 0.01rem;
+  }
+
+  /* Main column */
+  .main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 50%;
+    background-color: clear;
+    padding: 2rem;
+  }
+  .column,
+  img {
+    height: 30rem;
+    float: left;
+    width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .contactMain {
     background-color: clear;
     margin-left: 0.25rem;
@@ -499,6 +530,34 @@ img {
     width: fit-content;
     padding: 2rem;
     overflow: hidden;
+  }
+  .wrapper {
+    border: solid;
+    border-color: #c5c9f7;
+    background-color: #f5e2e2;
+    color: black;
+    font-size: 2.1rem;
+    margin-left: 1rem;
+    margin-right: 1em;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    max-height: 65rem;
+    overflow: scroll;
+  }
+  .footer {
+    padding-top: 1rem;
+    font-family: "Amaranth", sans-serif;
+  }
+
+  .foot-menu {
+    height: 0.25rem;
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
   }
 }
 
@@ -647,7 +706,22 @@ img {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 768px) {
+  /* .wrapper {
+    border: solid;
+    border-color: #c5c9f7;
+    background-color: #f5e2e2;
+    color: black;
+    font-size: 2.1rem;
+    margin-left: 1rem;
+    margin-right: 1em;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    max-height: 65rem;
+    overflow: scroll;
+  } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
