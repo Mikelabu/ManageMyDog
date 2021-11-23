@@ -491,7 +491,7 @@ img {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 780px) {
   .contactMain {
     background-color: clear;
     margin-left: 0.25rem;
@@ -647,22 +647,7 @@ img {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    border: solid;
-    border-color: #c5c9f7;
-    background-color: #f5e2e2;
-    color: black;
-    font-size: 2.1rem;
-    margin-left: 1rem;
-    margin-right: 1em;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0rem;
-    max-height: 65rem;
-    overflow: scroll;
-  }
+@media only screen and (max-width: 800px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
