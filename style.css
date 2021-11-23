@@ -484,13 +484,14 @@ img {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  two coloumn will stack ontop of each other .row {
+  /* two coloumn will stack ontop of each other  */
+  .row {
     flex-direction: column;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 1028px) {
   .nav-item {
     margin-left: 0rem;
     margin-right: 0rem;
@@ -548,13 +549,16 @@ img {
   .footer {
     padding-top: 1rem;
     font-family: "Amaranth", sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .foot-menu {
     height: 0.25rem;
     display: grid;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+    padding-left: 0rem;
+    padding-right: 0rem;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
   }
