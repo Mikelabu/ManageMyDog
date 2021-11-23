@@ -439,7 +439,8 @@ img {
 }
 /* Time and date button on Contact Us times page */
 
-#timebtn {
+#timebtn,
+#find-me {
   color: black;
   font-size: 1.8rem;
   background-color: rgb(161, 189, 212);
@@ -456,11 +457,13 @@ img {
   width: 50%;
   /* opacity: 0.8; */
 }
-#timebtn:hover {
+#timebtn:hover,
+#find-me:hover {
   background-color: rgb(80, 35, 244);
   color: rgb(187, 240, 241);
 }
-#dateTime {
+#dateTime,
+#map-link {
   color: #2107c7;
   /* font-family: "Oswald", sans-serif; */
   font-size: 2.25rem;

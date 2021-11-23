@@ -1,3 +1,4 @@
+"use strict";
 // This form requires validation. After submited a thank ypage will be displayed.
 
 function validate(){
@@ -36,6 +37,7 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
+    
     alert("Form Submitted Succesfully. Thank You " + name + " for getting in touch.");
     return true;
   }
