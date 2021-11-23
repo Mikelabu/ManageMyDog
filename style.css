@@ -14,8 +14,8 @@
 }
 
 html {
-  font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-size: 62%;
+  font-family: "Amaranth", sans-serif;
 }
 body {
   background-color: rgb(223, 238, 246);
@@ -76,6 +76,7 @@ a {
 /*Navbar and burger menu*/
 .navbar {
   font-family: "Amaranth", sans-serif;
+  font-family: 400;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -492,10 +493,43 @@ img {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 1028px) {
-  .nav-item {
-    margin-left: 0rem;
-    margin-right: 0rem;
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
   }
+
+  .nav-item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .nav-foot-item {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    font-weight: 450;
+    color: black;
+  }
+  .dropbtn {
+    padding: 0 0;
+    margin: 0rem 0rem;
+    /* font-family: "Amaranth", sans-serif;
+    font-weight: 400; */
+    text-transform: none;
+    font-size: 2rem;
+    color: black;
+    /*We want these buttons to have a decent touch area so they are easy to click/tap*/
+    display: inline-flex;
+    min-height: 2.8125rem;
+    align-items: center;
+    /*Styles needed for the button only*/
+    border: 0rem;
+    background: none;
+  }
+
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
@@ -545,6 +579,31 @@ img {
     padding-top: 0rem;
     max-height: 65rem;
     overflow: scroll;
+  }
+
+  .newDogSide {
+    -ms-flex: 30%; /* IE10 */
+    flex: 20%;
+    background-color: #f5e2e2;
+    padding: 2rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.01rem;
+  }
+  .sideImg {
+    -ms-flex: 70%; /* IE10 */
+    flex: 30%;
+    background-color: clear;
+    padding-top: 1rem;
+    padding-left: 5rem;
+  }
+  .dropImg,
+  img {
+    height: 35rem;
+    float: left;
+    width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .footer {
     padding-top: 1rem;
@@ -710,28 +769,4 @@ img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /* .wrapper {
-    border: solid;
-    border-color: #c5c9f7;
-    background-color: #f5e2e2;
-    color: black;
-    font-size: 2.1rem;
-    margin-left: 1rem;
-    margin-right: 1em;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0rem;
-    max-height: 65rem;
-    overflow: scroll;
-  } */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  ..;
 }
