@@ -32,6 +32,11 @@ h4 {
   font-size: 2.1rem;
   font-weight: 400;
 }
+h5 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
 
 .pageDescription {
   padding-top: 0rem;
@@ -338,13 +343,6 @@ img {
   width: 100%;
 }
 
-/* Clear floats after image containers */
-/* .row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
 .footer {
   padding-top: 2rem;
   font-family: "Amaranth", sans-serif;
@@ -358,21 +356,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
 }
-
-/*Contact us form*/
-/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans"); */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: "Josefin Sans", sans-serif;
-} */
-
-/* body {
-  background: #fece0c;
-} */
 
 .contactMain {
   -ms-flex: 70%; /* IE10 */
@@ -399,14 +382,6 @@ img {
   max-height: 80rem;
   overflow: scroll;
 }
-
-/* .wrapper h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #332902;
-} */
 
 .wrapper .input_field {
   margin-bottom: 1rem;
@@ -457,19 +432,12 @@ img {
   color: black;
   font-size: 1.8rem;
   background-color: rgb(161, 189, 212);
-  /* opacity: 0.9; */
-  /* position: fixed; */
   padding: 0.25rem 0.25rem;
-  /* margin: 1rem 1rem; */
-  /* border: none;
-  box-sizing: border-box;
-  border-style: inset;
-  border-width: thin; */
   border-radius: 1rem;
   cursor: pointer;
   width: 50%;
-  /* opacity: 0.8; */
 }
+
 #timebtn:hover,
 #find-me:hover {
   background-color: rgb(80, 35, 244);
@@ -478,154 +446,12 @@ img {
 #dateTime,
 #map-link {
   color: #2107c7;
-  /* font-family: "Oswald", sans-serif; */
   font-size: 2.25rem;
 }
+
 /* ------ Media Queries for Devices ------------ */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* two coloumn will stack ontop of each other  */
-  /* .row {
-    flex-direction: column;
-  } */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1028px) {
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-  }
-
-  .nav-item {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-  .nav-foot-item {
-    display: none;
-  }
-
-  .nav-link {
-    font-size: 2rem;
-    font-weight: 450;
-    color: black;
-  }
-  .dropbtn {
-    padding: 0 0;
-    margin: 0rem 0rem;
-    /* font-family: "Amaranth", sans-serif;
-    font-weight: 400; */
-    text-transform: none;
-    font-size: 2rem;
-    color: black;
-    /*We want these buttons to have a decent touch area so they are easy to click/tap*/
-    display: inline-flex;
-    min-height: 2.8125rem;
-    align-items: center;
-    /*Styles needed for the button only*/
-    border: 0rem;
-    background: none;
-  }
-
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 40%;
-    background-color: #f5e2e2;
-    padding: 2rem;
-    border-style: solid;
-    border-color: rgb(88, 231, 231);
-    border-width: 0.01rem;
-  }
-
-  /* Main column */
-  .main {
-    -ms-flex: 70%; /* IE10 */
-    flex: 50%;
-    background-color: clear;
-    padding: 2rem;
-  }
-  .column,
-  img {
-    height: 35rem;
-    float: left;
-    width: 95%;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .contactMain {
-    background-color: clear;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-    width: fit-content;
-    padding: 2rem;
-    overflow: hidden;
-  }
-  .wrapper {
-    border: solid;
-    border-color: #c5c9f7;
-    background-color: #f5e2e2;
-    color: black;
-    font-size: 2.1rem;
-    margin-left: 1rem;
-    margin-right: 1em;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0rem;
-    max-height: 65rem;
-    overflow: scroll;
-  }
-
-  .newDogSide {
-    -ms-flex: 30%; /* IE10 */
-    flex: 20%;
-    background-color: #f5e2e2;
-    padding: 2rem;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.01rem;
-  }
-  .sideImg {
-    -ms-flex: 70%; /* IE10 */
-    flex: 30%;
-    background-color: clear;
-    padding-top: 1rem;
-    padding-left: 5rem;
-  }
-  .dropImg,
-  img {
-    height: 35rem;
-    float: left;
-    width: 95%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .footer {
-    padding-top: 1rem;
-    font-family: "Amaranth", sans-serif;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-  }
-
-  .foot-menu {
-    height: 0.25rem;
-    display: grid;
-    width: 100%;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media only screen and (max-width: 600px) {
   body {
     padding-left: 0.25rem;
@@ -773,6 +599,133 @@ img {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Small devices (portrait tablets and large phones, 600px up to 1028px */
+@media only screen and (max-width: 1028px) {
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  .nav-item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  .nav-foot-item {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    font-weight: 450;
+    color: black;
+  }
+  .dropbtn {
+    padding: 0 0;
+    margin: 0rem 0rem;
+    text-transform: none;
+    font-size: 2rem;
+    color: black;
+    display: inline-flex;
+    min-height: 2.8125rem;
+    align-items: center;
+    border: 0rem;
+    background: none;
+  }
+
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 40%;
+    background-color: #f5e2e2;
+    padding: 2rem;
+    border-style: solid;
+    border-color: rgb(88, 231, 231);
+    border-width: 0.01rem;
+  }
+
+  /* Main column */
+  .main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 50%;
+    background-color: clear;
+    padding: 2rem;
+  }
+  .column,
+  img {
+    height: 35rem;
+    float: left;
+    width: 95%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contactMain {
+    background-color: clear;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    width: fit-content;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  .wrapper {
+    border: solid;
+    border-color: #c5c9f7;
+    background-color: #f5e2e2;
+    color: black;
+    font-size: 2.1rem;
+    margin-left: 1rem;
+    margin-right: 1em;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    max-height: 65rem;
+    overflow: scroll;
+  }
+
+  .newDogSide {
+    -ms-flex: 30%; /* IE10 */
+    flex: 20%;
+    background-color: #f5e2e2;
+    padding: 2rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.01rem;
+  }
+  .sideImg {
+    -ms-flex: 70%; /* IE10 */
+    flex: 30%;
+    background-color: clear;
+    padding-top: 1rem;
+    padding-left: 5rem;
+  }
+  .dropImg,
+  img {
+    height: 35rem;
+    float: left;
+    width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .footer {
+    padding-top: 1rem;
+    font-family: "Amaranth", sans-serif;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .foot-menu {
+    height: 0.25rem;
+    display: grid;
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

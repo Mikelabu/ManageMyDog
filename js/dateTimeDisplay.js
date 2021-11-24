@@ -1,5 +1,5 @@
 "use strict";
-// Display date and time on Movie screening pages
+// Display date and time on Contact Us form
 document.getElementById("timebtn").onclick = displayDate;
 
 function displayDate() {
