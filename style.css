@@ -613,7 +613,7 @@ img {
     margin-right: 0.25rem;
   }
   .nav-foot-item {
-    display: inline;
+    display: none;
   }
 
   .nav-link {
