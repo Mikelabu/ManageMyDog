@@ -39,7 +39,7 @@ function validate(){
     }
   
     function myFunction() {
-      window.location.href = "../html/thankYou.html";
+      window.location.href = "/html/thankYou.html";
     }
     alert("A browser is required to view Thank You page " + myFunction());
 
