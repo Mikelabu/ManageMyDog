@@ -501,6 +501,7 @@ img {
   .nav-menu {
     position: fixed;
     overflow-x: auto;
+
     left: -100%;
     top: 8.5rem;
     flex-direction: column;
@@ -514,7 +515,7 @@ img {
   }
 
   .nav-menu.active {
-    left: 0;
+    left: 10%;
   }
 
   .nav-item {
