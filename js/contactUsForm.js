@@ -42,7 +42,7 @@ function validate(){
     //   window.location.href = "../html/thankYou.html";
       
     // }
-    alert("Submitted ");
+    alert("Submitted");
 
     
     
