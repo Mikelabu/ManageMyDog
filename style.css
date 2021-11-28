@@ -498,8 +498,7 @@ img {
     -webkit-text-stroke: 0.09rem rgb(235, 226, 226); /* width and color */
   }
 
-  .nav-menu,
-  .foot-menu {
+  .nav-menu {
     position: fixed;
     overflow-x: auto;
     left: -100%;
@@ -523,7 +522,7 @@ img {
   }
   .nav-foot-item {
     display: inline;
-    margin: 2.5rem 0;
+    /* margin: 2.5rem 0rem; */
   }
 
   .hamburger {
