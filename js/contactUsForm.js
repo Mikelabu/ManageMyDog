@@ -38,11 +38,11 @@ function validate(){
       return false;
     }
   
-    function myFunction() {
+    function thankYou() {
       window.location.href = "../html/thankYou.html";
       
     }
-    alert("A browser is required to view Thank You page " + myFunction());
+    alert("A browser is required to view Thank You page " + thankYou());
 
     
     
