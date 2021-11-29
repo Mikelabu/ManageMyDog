@@ -160,7 +160,7 @@ a {
 .dropdown-content a {
   color: black;
   min-width: 4rem;
-  padding: 1.25rem 4rem;
+  padding: 1.25rem 1.25rem;
   text-decoration: none;
   display: block;
 }
@@ -168,14 +168,14 @@ a {
 .dropdown-content a:hover {
   background-color: #f5e2e2;
   color: rgb(225, 10, 25);
-  min-width: 16rem;
+  min-width: 12rem;
   border-radius: 2rem;
 }
 
 .dropdown:hover .dropdown-content {
   /* margin: 1rem 1rem; */
   padding: 0.25rem 5rem;
-  display: block;
+  display: flex;
   flex-wrap: nowrap;
   text-decoration: none;
   text-align: center;
@@ -519,6 +519,7 @@ img {
   }
   .nav-link {
     font-size: 2.5rem;
+    padding-top: 0.25rem;
     font-weight: 450;
     color: black;
   }
@@ -527,13 +528,25 @@ img {
     color: #212cda;
   }
 
-  .nav-item {
+  .nav-item,
+  .nav-foot-item,
+  .dropdown {
     /* margin: 2.5rem 0; */
     margin-top: 2.5rem;
   }
   .nav-foot-item {
     display: flex;
     margin-top: 2.5rem;
+  }
+  .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 6rem;
+    border-radius: 1rem;
+    background-color: rgb(174, 220, 245);
+    color: black;
+    max-height: 50rem;
+    overflow: scroll;
   }
 
   .footer {
