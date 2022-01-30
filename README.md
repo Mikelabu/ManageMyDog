@@ -7,3 +7,4 @@ There is a option to update general information like weight, behavioural changes
 More information will follow as I get on with this litle project. This website will hopefully be changed from HTML,CSS,JS with no backend to a website Using React and Strapi.
 
 
+[ManageMyDog_Presentation.pptx](https://github.com/Mikelabu/ManageMyDog/files/7965147/ManageMyDog_Presentation.pptx)
